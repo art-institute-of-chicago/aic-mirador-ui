@@ -10,8 +10,7 @@ const config = {
       palette: {
         type: 'dark',
         primary: {
-          main: '#6F2562',
-          dark: '#000000',
+          main: '#333',
         },
         secondary: {
           main: '#000000',
@@ -72,6 +71,23 @@ const config = {
   },
    workspaceControlPanel: {
      enabled: false,
+  },
+  osdConfig: { // Default config used for OpenSeadragon
+    preserveViewport: true,
+    springStiffness: 15,
+    visibilityRatio: 1,
+    zoomPerScroll: 1.2,
+    zoomPerClick: 1.3,
+    immediateRender:false,
+    constrainDuringPan: true,
+    animationTime: 1.5,
+    minZoomLevel: 0,
+    minZoomImageRatio: 0.8,
+    maxZoomPixelRatio: 1.0,
+    defaultZoomLevel: 0,
+    gestureSettingsMouse: {
+      scrollToZoom: true
+    },
   },
 }
 
