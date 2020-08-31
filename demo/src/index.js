@@ -1,37 +1,40 @@
 import mirador from 'mirador/dist/es/src/index';
 import aicZoomButtonsPlugin from '../../src/plugins/aicZoomButtonsPlugin';
 import aicNavigationButtonsPlugin from '../../src/plugins/aicNavigationButtonsPlugin';
+import aicRemoveNavPlugin from '../../src/plugins/aicRemoveNavPlugin';
 
 const config = {
   id: 'demo',
   selectedTheme: 'aicTheme',
-    themes: {
+  themes: {
     aicTheme:{
       palette: {
         type: 'dark',
         primary: {
-          main: '#333',
-        },
-        secondary: {
-          main: '#000000',
+          main: '#fff',
         },
         shades: {
-          dark: '#000000',
-          main: '#000000',
-          light: '#000000',     
+          dark: '#333',
+          main: '#333',
+          light: '#333',     
         },
+        background: {
+          paper: '#757575',
+        }
       },
       typography:{
-        fontFamily: ['SabonLTPro-Roman',
-                    'SabonLTPro-Roman'
-                    ],
+        fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
       },
-    },
-    dark: {
-      palette: {
-        type: 'dark',
-        primary: {
-          main: '#B50938',
+      overrides: {
+        MuiToolbar: {
+          root: {
+            display: 'none',
+          },
+        },
+        MuiTypography: {
+          root: {
+            display: 'none',
+          },
         },
       },
     },
@@ -39,7 +42,6 @@ const config = {
   language: 'en',
   windows: [{
     loadedManifest: 'https://iiif.bodleian.ox.ac.uk/iiif/manifest/e32a277e-91e2-4a6d-8ba6-cc4bad230410.json',
-    //thumbnailNavigationPosition: 'far-bottom',
   }],
   thumbnailNavigation: {
     defaultPosition: 'far-bottom', // Which position for the thumbnail navigation to be be displayed. Other possible values are "far-bottom" or "far-right"
@@ -70,7 +72,7 @@ const config = {
     type: 'mosaic',
   },
    workspaceControlPanel: {
-     enabled: false,
+    enabled: false,
   },
   osdConfig: { // Default config used for OpenSeadragon
     preserveViewport: true,
@@ -92,5 +94,5 @@ const config = {
 }
 
 const miradorInstance = mirador.viewer(config, [
-  aicZoomButtonsPlugin, aicNavigationButtonsPlugin
+  aicZoomButtonsPlugin, aicNavigationButtonsPlugin, aicRemoveNavPlugin
 ]);
