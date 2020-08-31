@@ -32,6 +32,7 @@ const CustomButtonPrevious = withStyles({
   root: {
     transform: 'scale(1.5) rotate(180deg)',
     left: '5%',
+    position: 'absolute',
     '&:hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.0)',
     },
@@ -41,7 +42,8 @@ const CustomButtonPrevious = withStyles({
 const CustomButtonNext = withStyles({
   root: {
     transform: 'scale(1.5)',
-    right: '-90%',
+    right: '5%',
+    position: 'absolute',
     '&:hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.0)',
     },
