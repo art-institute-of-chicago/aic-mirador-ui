@@ -75,7 +75,7 @@ const config = {
    workspaceControlPanel: {
     enabled: false,
   },
-  osdConfig: { // Default config used for OpenSeadragon
+  osdConfig: { // Config used for OpenSeadragon
     preserveViewport: true,
     springStiffness: 15,
     visibilityRatio: 1,
@@ -83,13 +83,15 @@ const config = {
     zoomPerClick: 1.3,
     immediateRender:false,
     constrainDuringPan: true,
-    animationTime: 1.5,
+    animationTime: 1,
     minZoomLevel: 0,
     minZoomImageRatio: 0.8,
     maxZoomPixelRatio: 1.0,
     defaultZoomLevel: 0,
     gestureSettingsMouse: {
-      scrollToZoom: true
+      scrollToZoom: true,
+      clickToZoom: true,
+      dblClickToZoom: false,
     },
   },
 }
