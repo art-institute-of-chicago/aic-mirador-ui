@@ -2,6 +2,7 @@ import mirador from 'mirador/dist/es/src/index';
 import aicZoomButtonsPlugin from '../../src/plugins/aicZoomButtonsPlugin';
 import aicNavigationButtonsPlugin from '../../src/plugins/aicNavigationButtonsPlugin';
 import aicRemoveNavPlugin from '../../src/plugins/aicRemoveNavPlugin';
+import aicThumbnailCustomization from '../../src/plugins/aicThumbnailCustomizationPlugin';
 
 const config = {
   id: 'demo',
@@ -20,7 +21,7 @@ const config = {
         },
         background: {
           paper: '#757575',
-        }
+        },
       },
       typography:{
         fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
@@ -94,5 +95,5 @@ const config = {
 }
 
 const miradorInstance = mirador.viewer(config, [
-  aicZoomButtonsPlugin, aicNavigationButtonsPlugin, aicRemoveNavPlugin
+  aicZoomButtonsPlugin, aicNavigationButtonsPlugin, aicRemoveNavPlugin, aicThumbnailCustomization
 ]);
