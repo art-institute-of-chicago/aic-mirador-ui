@@ -95,5 +95,5 @@ const config = {
 }
 
 const miradorInstance = mirador.viewer(config, [
-  aicZoomButtonsPlugin, aicNavigationButtonsPlugin, aicRemoveNavPlugin, //aicThumbnailCustomization
+  aicZoomButtonsPlugin, aicNavigationButtonsPlugin, aicRemoveNavPlugin, aicThumbnailCustomization
 ]);
