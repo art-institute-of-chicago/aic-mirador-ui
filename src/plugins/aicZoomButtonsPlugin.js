@@ -46,6 +46,12 @@ const styles = theme => ({
     '&:not(:last-child)': {
       border: 0,
     }
+  },
+  Loader: {
+    backgroundColor: 'rgba(0,0,0,1)',
+    width: 200,
+    height: 200,
+    margin: '0 auto',
   }
 })
 
@@ -117,7 +123,7 @@ class ZoomButtonsPlugin extends Component {
     const zoomIn = ( windowViewProperties && viewer && windowViewProperties.zoom < viewer.viewport.getMaxZoom() );
     const zoomOut = ( windowViewProperties && viewer && windowViewProperties.zoom > viewer.viewport.getMinZoom() );
     return (
-      <div className={!viewerFullyLoaded && 'loader'}>
+      <div className={!viewerFullyLoaded && classes.Loader}>
         <div style={{position: 'absolute', bottom: 58, right: 32, left: 'auto', zIndex: 500}}>
           <ButtonGroup size='large' disableElevation variant='contained' color='primary' >
             <Button className={classes.CustomZoomButton} aria-label='zoom in' onClick={this.handleZoomInClick} disabled={!zoomIn}>
