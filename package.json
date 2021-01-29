@@ -24,12 +24,12 @@
     "mirador-dl-plugin": "^0.12.0"
   },
   "peerDependencies": {
-    "mirador": "^3.0.0-rc.5",
+    "mirador": "^3.0.0",
     "react": "16.x",
     "react-dom": "16.x"
   },
   "devDependencies": {
-    "mirador": "^3.0.0-rc.5",
+    "mirador": "^3.0.0",
     "nwb": "0.25.x",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
