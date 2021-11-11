@@ -2,7 +2,7 @@
 
 # Mirador 3 Custom UI Plugin
 
-A set of plugins used to customize the Art Institute of Chicago's (AIC) Mirador 3 implementation. 
+A set of plugins used to customize the Art Institute of Chicago's (AIC) Mirador 3 implementation.
 
 ## Features
 
@@ -18,6 +18,7 @@ Currently AIC's application of Mirador is for viewing book-like objects from the
 ## Requirements
 
 * [npm](https://www.npmjs.com/)
+* Node version 14.15.1
 
 ## Installing
 
